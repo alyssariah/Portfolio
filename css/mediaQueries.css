@@ -1,0 +1,361 @@
+
+/* media queries */
+@media (min-width: 768px){
+  h5 {
+    font-size: 24px;
+  }
+  h5 span {
+ font-size: 16px;
+  }
+  #nav div {
+    height: 4px;
+    width: 45px;
+    background-color: black;
+    margin: 4px 0px;
+    border-radius: 5px;
+  }
+  nav ul a {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  #home {
+    margin-top: 150px;
+    font-size: 50px;
+  }
+ .ml11 .letter {
+     font-size: 50px;
+    }
+  #aboutme {
+    padding-top: 40px;
+  }
+  #about {
+    padding-top: 45px;
+  }
+  #about img {
+    /* border-radius: 0px; */
+    height: 400px;
+    width: 400px;
+  }
+  #about p {
+    font-size: 22px;
+  }
+  .skills li {
+    font-size: 16px;
+  }
+  input, select {
+    height: 38px;
+  }
+  #myprojects{
+    padding-top: 40px;
+  }
+  #projects {
+    padding: 20px 0;
+    display: grid;
+    grid-template-rows: 30px repeat(3, 1fr);
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "title title"
+    "pr1 pr2"
+    "pr3 pr4"
+    "pr5 pr6"
+  }
+  #projects h2 {
+     grid-area: title;
+     padding-top: 10px
+   }
+  #projects div:nth-of-type(1){
+    grid-area: pro1;
+  }
+  #projects div:nth-of-type(2){
+    grid-area: pro2;
+  }
+  #projects div:nth-of-type(3){
+    grid-area: pro3;
+  }
+  #projects div:nth-of-type(4){
+    grid-area: pro4;
+  }
+  #projects div:nth-of-type(5){
+    grid-area: pro5;
+  }
+  #projects div:nth-of-type(6){
+    grid-area: pro6;
+  }
+  #projects a {
+    display: flex;
+    justify-content: center;
+  }
+  #contactme {
+    padding-top: 70px;
+  }
+  #contact {
+   padding-top: 70px;
+  }
+  section{
+    width: 80vw;
+  }
+  label, select{
+    font-size: 22px;
+  }
+  input, textarea, select {
+    font-size: 16px;
+  }
+  footer {
+    font-size: 16px;
+  }
+  .icon {
+    width: 50px;
+    height: 40px;
+  }
+}
+@media (min-width: 1024px){
+  header {
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+  }
+  h5 {
+  font-size:28px;
+  padding: 5px 20px;
+  }
+  h5 span {
+    font-size: 20px;
+  }
+  #nav {
+    display: none;
+  }
+  nav {
+    flex: 1;
+    align-self: center;
+    padding-right: 22px;
+  }
+  nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  nav ul li a{
+    font-size: 25px;
+    padding: 0 10px;
+  }
+  nav ul a::selection {
+    color: green;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  #home {
+    background-size: cover;
+    height: 100vh;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .ml11 .text-wrapper {
+    margin-top: 90px;
+  } 
+  .ml11 .line {
+    height: 80%;
+  }
+  .ml11 .letter {
+    font-size: 50px;
+  }
+  .ml11 .line1 {
+    top: 15%;
+    left: 0;
+  }
+  #aboutme{
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  #about {
+    padding: 20px;
+    margin: 0;
+    /* padding: 35px 50px 30px 50px; */
+    width: 95vw;
+  }
+  .infoSections ul {
+    margin: 10px 0;
+  }
+  .infoSections ul li{
+    text-align: left;
+    font-size: 16px;
+  }
+  #about h2{
+    padding: 10px;
+    margin: 0;
+  }
+  .image1{
+    display: none;
+  }
+  .image2 {
+    display: block;
+  }
+  #about h2 {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+  }
+  #about div {
+  width: 100%;
+  }
+  #about p {
+    margin-top:0;
+    text-align: left;
+    line-height: 2.1em;
+    font-size: 22px;
+  }
+  #about img {
+    width: 400px;
+    height: 530px;
+    margin: 0px 40px 20px 20px;
+    border-radius: 10px;
+    float: left;
+  }
+  .skills {
+    width: 100%;
+  }
+  .skills li {
+    font-size: 16px;
+    padding: 5px 20px;
+    margin: 0 10px;
+  }
+  #projects.card{
+    padding: 0;
+  }
+  #projects {
+    width: 95vw;
+    height: 89vh;
+    display: grid;
+    grid-template-rows: 60px repeat(2, 40vh);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "heading heading heading"
+    "pro1 pro2 pro3"
+    "pro4 pro5 pro6";
+  }
+  #projects div{
+    width: 300px;
+    height: 250px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .hover {
+    width: 300px;
+    height: 250px;
+
+  }
+  #projects a{
+    display: flex;
+    justify-content: center;
+  }
+  #projects h2 {
+    padding-top: 20px;
+    margin: 0;
+    grid-area: heading;
+  }
+  #projects div:nth-of-type(1){
+    grid-area: pro1;
+  }
+  #projects div:nth-of-type(2){
+    grid-area: pro2;
+  }
+  #projects div:nth-of-type(3){
+    grid-area: pro3;
+  }
+  #projects div:nth-of-type(4){
+    grid-area: pro4;
+  }
+  #projects div:nth-of-type(5){
+    grid-area: pro5;
+  }
+  #projects div:nth-of-type(6){
+    grid-area: pro6;
+  }
+  #contactme{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  #contact {
+    width: 95vw;
+    height: 80vh;
+    flex-direction: row;
+    padding:0;
+  }
+  #contact h2 {
+    align-self: flex-start;
+    margin: 30px 50px;
+    width: 45vw;
+  }
+  .myContact{
+    margin-top: 0;
+    flex: 1;
+    height: 80vh;
+    justify-content: flex-start;
+    padding: 100px 0px
+  }
+  .myContact h3{
+    font-size: 30px;
+  }
+  .contactInfo {
+    text-align: left;
+    margin: 0;
+  }
+  .contactInfo li {
+    margin: 30px;
+  }
+  input, textarea, select {
+    width: 23vw;
+    border-radius: 6px;
+  }
+  form {
+    padding: 30px;
+    width: 65vw;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  form div{
+    width: 25vw;
+    margin: 10px 25px 10px 0;
+  }
+  form div:nth-of-type(5){
+    width: 50vw;
+  }
+  #comments {
+    width: 50vw;
+    margin-bottom: 20px;
+  }
+  footer {
+   font-size: 20px;
+  }
+  .icon {
+   width: 60px;
+   height: 50px;
+  }
+}
+
+/* @media (min-width:1500px){
+  h5{
+    font-size: 36px;
+  }
+  h5 span{
+    font-size: 26px;
+  }
+  nav ul {
+    font-size: 32px;
+  }
+  h2{
+    font-size: 50px;
+  }
+  #about p {
+    font-size: 28px;
+  }
+  #about ul li {
+    font-size: 20px;
+  }
+} */
