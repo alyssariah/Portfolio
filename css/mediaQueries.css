@@ -237,15 +237,15 @@
     "pro4 pro5 pro6";
   }
   #projects div{
-    width: 300px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     margin: 0;
     display: flex;
     justify-content: center;
   }
   .hover {
-    width: 300px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
 
   }
   #projects a{
