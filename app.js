@@ -10,6 +10,49 @@ $("nav a").click(function(){
   $("ul").removeClass('nav-active')
 })
 
+//hover effect over about me sections
+$location = $(".location")
+$location.hover(function(){
+  $location.css('cursor', 'pointer')
+  $(".location p").css("display", "none")
+  $(".location li").toggleClass('active')
+},
+function(){
+  $(".location li").removeClass('active')
+  $(".location p").css("display", "block")
+})
+$hobby = $(".hobby")
+$hobby.hover(function(){
+  $hobby.css('cursor', 'pointer')
+  $(".hobby p").css("display", "none")
+  $(".hobby li").toggleClass('active')
+},
+function(){
+  $(".hobby li").removeClass('active')
+  $(".hobby p").css("display", "block")
+})
+$education = $(".education")
+$education.hover(function(){
+  $education.css('cursor', 'pointer')
+  $(".education p").css("display", "none")
+  $(".education li").toggleClass('active')
+},
+function(){
+  $(".education li").removeClass('active')
+  $(".education p").css("display", "block")
+})
+$brand = $(".brand")
+$brand.hover(function(){
+  $brand.css('cursor', 'pointer')
+  $(".brand p").css("display", "none")
+  $(".brand li").toggleClass('active')
+},
+function(){
+  $(".brand li").removeClass('active')
+  $(".brand p").css("display", "block")
+})
+
+
 let $projects = $("#projects")
 //getting data from json
 let url = 'https://docs.google.com/spreadsheets/d/1rSCXAKx7Pvd_FTYy3JIBdVTJTm-KZongre1eOOFiX9Y/edit#gid=0'

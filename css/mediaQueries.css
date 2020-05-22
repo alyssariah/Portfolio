@@ -28,14 +28,17 @@
     font-size: 50px;
   }
   #aboutme {
-    padding-top: 40px;
+    padding-top: 50px;
   }
   #about {
-    padding-top: 45px;
+    padding-top: 0px;
   }
   #about img {
     height: 400px;
     width: 400px;
+  }
+  .infoSections ul li.active{
+    font-size: 16px;
   }
   #about p {
     font-size: 22px;
@@ -160,8 +163,7 @@
     left: 0;
   }
   #aboutme{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
   }
   #about {
     padding: 20px;
@@ -177,12 +179,36 @@
   .infoSections{
     width: 65vw;
   }
-  .infoSections ul {
-    margin: 10px 0;
+  .infoSections div{
+    width: 30vw;
+    height: 22vh;
   }
   .infoSections ul li{
-    text-align: left;
+    text-align: center;
     font-size: 16px;
+  }
+  .infoSections ul li.active{
+    font-size: 20px;
+  }  
+  .location {
+    height: 20vh;
+    width: 30vw;
+  }
+  .hobby {
+    height: 20vh;
+    width: 30vw;
+  }
+  .education {
+    height: 20vh;
+    width: 30vw;
+  }
+  .resume {
+    height: 20vh;
+    width: 30vw;
+  }
+  .brand, .brand div{
+    height: 28vh;
+    width: 60vw;
   }
   #about h2{
     padding: 10px;
@@ -201,21 +227,21 @@
   }
   #about p {
     margin-top:0;
-    text-align: left;
+    text-align: center;
     line-height: 2.1em;
     font-size: 22px;
   }
   #about img {
-    width: 400px;
-    height: 530px;
-    margin: 0px 40px 20px 20px;
+    width: 29vw;
+    height: 70vh;
+    margin: 20px 20px;
     border-radius: 10px;
   }
   .skills {
     width: 100%;
   }
   .skills li {
-    font-size: 16px;
+    font-size: 18px;
     padding: 5px 20px;
     margin: 0 10px;
   }
