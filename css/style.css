@@ -34,7 +34,7 @@ header {
 h5 {
   color: black;
   width: 80%;
-  font-size: 14px;
+  font-size: 20px;
   padding: 15px 20px;
   margin: 0;
   align-self: center;
@@ -42,7 +42,7 @@ h5 {
  h5 span {
   /* color: #CDCED2; */
   color: #B3B4B0;
-  font-size: 10px;
+  font-size: 14px;
 }
 #nav {
   padding: 0 20px;
@@ -77,7 +77,7 @@ nav ul{
 }
 nav li {
   padding: 15px 10px;
-  font-size: 14px;
+  font-size: 18px;
 }
 nav ul a {
   text-decoration: none;
@@ -202,6 +202,9 @@ h2 {
   padding: 35px 20px;
   margin-top: 20px;
 }
+#about p {
+  font-weight: bold;
+}
 .image2 {
   display: none;
 }
@@ -216,7 +219,6 @@ h2 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  font-weight: bold;
   top: 0;
   left: 0;
   width: 38vw;
@@ -270,7 +272,6 @@ h2 {
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 2s;
   display: block;
-  font-weight: bold;
   font-size: 12px;
 }
 .location{
@@ -328,7 +329,6 @@ h2 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  font-weight: bold;
   top: 0;
   left: 0;
   background-color: rgba(255,255,255,0.7);
@@ -350,7 +350,10 @@ h2 {
 }
 #myprojects{
   padding-bottom: 50px;
+  width: 100vw;
   border-bottom: 1px solid #B3B4B0;
+  display: flex;
+  justify-content: center;
 }
 #projects {
   width: 90vw;
@@ -377,14 +380,21 @@ h2 {
   justify-content: space-around;
 }
 .hover p{
+  padding: 5px;
   font-size: 18px;
+}
+.hover a{
+  width: 300px;
+  display: flex;
+  justify-content: center;
 }
 .button {
   font-size: 16px;
-  width: 120px;
+  width: 130px;
   height: 40px;
   margin: 0 5px;
   background-color: #E5EEDA;
+  border: 1px solid #C3D69C;
   border-radius: 20px;
 }
 .button:hover {
@@ -448,6 +458,7 @@ label:active {
 input, select {
   height: 24px;
   width: 50vw;
+  color: black;
 }
 input, textarea, select {
   width: 60vw;
@@ -457,6 +468,7 @@ input, textarea, select {
   font-size: 14px;
   margin: 20px;
   padding: 16px;
+  color: black;
 }
 select:invalid { 
   color: grey; 

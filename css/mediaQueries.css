@@ -209,6 +209,7 @@
   .brand, .brand div{
     height: 28vh;
     width: 60vw;
+    font-size: 16px;
   }
   #about h2{
     padding: 10px;
@@ -229,7 +230,7 @@
     margin-top:0;
     text-align: center;
     line-height: 2.1em;
-    font-size: 22px;
+    font-size: 26px;
   }
   #about img {
     width: 29vw;
@@ -246,7 +247,7 @@
     margin: 0 10px;
   }
   #projects {
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
     display: grid;
     grid-template-rows: 60px repeat(2, 48vh);
