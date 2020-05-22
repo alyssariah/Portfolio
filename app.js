@@ -39,30 +39,42 @@ fetch(source)
        title: project.gsx$title.$t,
        image: project.gsx$image.$t,
        descrip: project.gsx$description.$t,
-       url: project.gsx$url.$t
+       url: project.gsx$url.$t,
+       code: project.gsx$code.$t
      }
    })
    app(project)
 })
 function app(project) {
+  console.log('project', project)
   for(j=0; j<6; j++){
-    let $a = $("<a>")
-    $a.attr('href', project[j].url).attr('target', '_blank').css('text-decoration', 'none')
-    $projects.append($a)
     let $div = $("<div>")
-    $div.css("background-image", `url('${project[j].image}')`)
-    $div.addClass('background')
-    $a.append($div)
+      $div.css("background-image", `url('${project[j].image}')`)
+      $div.addClass('background')
+      $projects.append($div)
     let $divj = $("<section>")
-    $divj.addClass('hover')
-    let $h3 = $("<h3>")
-    $h3.html(project[j].title)
-    let $p = $("<p>")
-    $p.html(project[j].descrip)
-    let $b = $("<button>")
-    $b.html("View Project")
-    $b.addClass('button')
-    $divj.append($h3).append($p).append($b)
+      $divj.addClass('hover')
+      let $h3 = $("<h3>")
+        $h3.html(project[j].title)
+      let $p = $("<p>")
+        $p.html(project[j].descrip)
+      $divj.append($h3).append($p)
+      let $buttondiv = $("<a>")
+        $divj.append($buttondiv)
+      let $a = $("<a>")
+        $a.attr('href', project[j].url).attr('target', '_blank').css('text-decoration', 'none')
+        $buttondiv.append($a)
+      let $b = $("<button>")
+        $b.html("View Project")
+        $b.addClass('button')
+        $a.append($b)
+      let $a2 = $("<a>")
+        $a2.attr('href', project[j].code).attr('target', '_blank').css('text-decoration', 'none')
+        $buttondiv.append($a2)
+      let $b2 = $("<button>")
+          $b2.html("View Code")
+          $b2.addClass('button')
+          $a2.append($b2)
     if (window.matchMedia('(max-width: 768px)').matches) {
       $div.prepend($divj)
     }
