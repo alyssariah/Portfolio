@@ -33,11 +33,22 @@
   #about {
     padding-top: 0px;
   }
-  #about img {
+  .image1 {
     height: 400px;
     width: 400px;
   }
   .infoSections ul li.active{
+    font-size: 16px;
+  }
+  .education div img:nth-of-type(1){
+    width: 14vw;
+    height: 3vh;
+  }
+  .education div img:nth-of-type(2){
+    width: 12vw;
+    height: 6vh;
+  }
+  .education span {
     font-size: 16px;
   }
   #about p {
@@ -202,13 +213,24 @@
     height: 20vh;
     width: 30vw;
   }
+  .education div img:nth-of-type(1){
+    width: 11vw;
+    height: 3.8vh;
+  }
+  .education div img:nth-of-type(2){
+    width: 10vw;
+    height: 9vh;
+  }
+  .education span{
+    font-size: 18px;
+  }
   .resume {
     height: 20vh;
     width: 30vw;
   }
   .brand, .brand div{
     height: 28vh;
-    width: 60vw;
+    width: 60.4vw;
     font-size: 16px;
   }
   #about h2{
@@ -220,6 +242,10 @@
   }
   .image2 {
     display: block;
+    width: 29vw;
+    height: 70vh;
+    margin: 20px 20px;
+    border-radius: 10px;
   }
   #about h2 {
     width: 100%;
@@ -232,12 +258,6 @@
     line-height: 2.1em;
     font-size: 26px;
   }
-  #about img {
-    width: 29vw;
-    height: 70vh;
-    margin: 20px 20px;
-    border-radius: 10px;
-  }
   .skills {
     width: 100%;
   }
@@ -246,11 +266,14 @@
     padding: 5px 20px;
     margin: 0 10px;
   }
+  #myprojects{
+    padding-top: 5px;
+  }
   #projects {
     width: 90vw;
-    height: 100vh;
+    height: 85vh;
     display: grid;
-    grid-template-rows: 60px repeat(2, 48vh);
+    grid-template-rows: 60px repeat(2, 42vh);
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     grid-template-areas:

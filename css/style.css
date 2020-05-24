@@ -208,7 +208,7 @@ h2 {
 .image2 {
   display: none;
 }
-#about img {
+.image1 {
   border-radius: 300px;
   margin-bottom: 20px;
   height: 250px;
@@ -300,6 +300,19 @@ h2 {
   height: 20vh;
   width: 38vw;
 }
+.education div img:nth-of-type(1){
+  width: 16vw;
+  height: 3vh;
+  margin: 0px;
+}
+.education div img:nth-of-type(2){
+  width: 14vw;
+  height: 6vh;
+  margin: 0px;
+}
+.education span{
+  font-size: 8px;
+}
 .resume{
   background-image: url("https://live.staticflickr.com/7068/13903383190_5920c870e1_b.jpg");
   background-size: cover;
@@ -367,7 +380,7 @@ h2 {
   margin: 0;
 }
 .hover {
-  background-color: rgba(244, 247, 247, 0.8);
+  background-color: rgba(244, 244, 244, 0.8);
   z-index: 1;
   width: 300px;
   height: 300px;
@@ -386,19 +399,31 @@ h2 {
 .hover a{
   width: 300px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-.button {
+.hover a i{
+  margin-left: 5px;
+}
+/* .button {
   font-size: 16px;
-  width: 130px;
-  height: 40px;
-  margin: 0 5px;
-  background-color: #E5EEDA;
+  width: 52px;
+  height: 50px;
+  margin: 0;
+  border: none;
+  background-color: white;
   border: 1px solid #C3D69C;
-  border-radius: 20px;
+  border-radius: 100px;
+} */
+.btn-secondary{
+  width: 110px;
+  height: 45px;
+  padding: 0;
+  border-radius: 100px;
+  /* padding: 12px 28px; */
 }
 .button:hover {
   cursor: pointer;
+  background-color: #E5EEDA;
 }
 #projects div{
   padding: 0;
