@@ -103,10 +103,10 @@
   section{
     width: 80vw;
   }
-  label, select{
+  label {
     font-size: 22px;
   }
-  input, textarea, select {
+  input, textarea, .form-control {
     font-size: 16px;
   }
   footer {
@@ -340,7 +340,7 @@
   .contactInfo li {
     margin: 30px;
   }
-  input, textarea, select {
+  input, textarea, .form-control {
     width: 20vw;
     border-radius: 6px;
   }

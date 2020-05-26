@@ -74,7 +74,6 @@ let source = `https://spreadsheets.google.com/feeds/list/1rSCXAKx7Pvd_FTYy3JIBdV
 fetch(source)
   .then( response => response.json() ) // this parses the data from string back into an object
   .then( data => {
-   console.log('data', data)
   //data.feed.entry is the array that stores our projects
    let project = data.feed.entry.map( project =>{
      // console.log('project', project.gsx$title.$t)
@@ -90,7 +89,6 @@ fetch(source)
 })
 
 function app(project) {
-  console.log('project', project)
   for(j=0; j<6; j++){
     let $div = $("<div>")
       $div.css("background-image", `url('${project[j].image}')`)
