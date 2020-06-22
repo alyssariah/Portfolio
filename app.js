@@ -41,6 +41,16 @@ function(){
   $(".education li").removeClass('active')
   $(".education p").css("display", "block")
 })
+$resume = $(".resume")
+$resume.hover(function(){
+  $resume.css('cursor', 'pointer')
+  $(".resume p").css("display", "none")
+  $(".resume li").toggleClass('active')
+},
+function(){
+  $(".resume li").removeClass('active')
+  $(".resume p").css("display", "block")
+})
 $brand = $(".brand")
 $brand.hover(function(){
   $brand.css('cursor', 'pointer')
