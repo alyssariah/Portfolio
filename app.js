@@ -133,12 +133,11 @@ function app(project) {
           // $codeimg.addClass("fas fa-code")
           // $b2.append($codeimg)
           $a2.append($b2)
-    if (window.matchMedia('(max-width: 768px)').matches) {
-      $div.prepend($divj)
-    }
+    // if (window.matchMedia('(max-width: 768px)').matches) {
+    //   $div.prepend($divj)
+    // }
     $div.hover(function(){
       $div.prepend($divj)
-
     },
     function(){$div.empty($divj)
     })
