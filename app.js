@@ -1,4 +1,3 @@
-
 //setting up hamburger navigation
 let $nav = $("#nav")
 
